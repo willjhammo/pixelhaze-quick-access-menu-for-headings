@@ -1,10 +1,10 @@
 # pixelhaze-quick-access-menu-for-headings
 A popup menu that automatically takes a user to heading of their choice. 
 
-This plugin adds a customisable, fixed menu to your Squarespace site, allowing users to quickly navigate between headings on the page. It automatically generates a list of all <h1> through <h6> elements, creating an interactive and user-friendly table of contents.
+This plugin adds a customisable, fixed menu to your Squarespace site, allowing users to quickly navigate between headings on the page. It automatically generates a list of all h1 through h6 elements, creating an interactive and user-friendly table of contents.
 
 Features:
-1. Automatically scans the page for all headings (<h1> to <h6>) and generates a menu of clickable links.
+1. Automatically scans the page for all headings (h1 to h6) and generates a menu of clickable links.
 2. Clicking on a menu item smoothly scrolls to the corresponding heading.
 3. Easily adjust colors, fonts, and styles via CSS.
 4. Users can toggle the menu visibility with a button.
