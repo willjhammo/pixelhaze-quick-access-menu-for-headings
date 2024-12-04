@@ -1,0 +1,24 @@
+<script>
+    $(document).ready(function () {
+        var headings = $("h1, h2, h3, h4, h5, h6");
+        var optionsList = $("<ul>").attr("id", "options-list");
+        headings.each(function (index, heading) {
+            var optionText = $(heading).text();
+            var listItem = $("<li>").text(optionText);
+            listItem.on("click", function () {
+                var targetHeading = $(heading);
+                $('html, body').animate({
+                    scrollTop: targetHeading.offset().top
+                }, 100);
+            });
+            optionsList.append(listItem);
+        });
+        var toggleButton = $("<button>").attr("id", "toggle-button").text("Heading Menu");
+        toggleButton.on("click", function () {
+            optionsList.slideToggle();
+        });
+        var fixedMenu = $("<div>").attr("id", "fixed-menu");
+        fixedMenu.append(optionsList).append(toggleButton);
+        $("body").append(fixedMenu);
+    });
+</script>
