@@ -1,0 +1,48 @@
+#fixed-menu {
+    background-color: white; /*change background colour for MENU LIST*/
+    color: black; /*change text colour MENU LIST*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 1%;
+    font-family: var(--body-font-font-family);
+    box-shadow: -5px -3px 5px rgba(0, 0, 0, 0.1), 5px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+#options-list {
+    overflow-y: auto;
+    max-height: 400px;
+    display: none;
+    padding: 0;
+}
+
+#options-list li {
+    display: block;
+    padding: 1% 1% 1% 2%;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+#toggle-button {
+    background-color: #fff; /*change background colour for BUTTON*/
+    color: inherit; /*change text colour for BUTTON*/
+    display: block;
+    width: 15rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid #000;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#options-list li,
+#options-list li:hover,
+#toggle-button:hover {
+    transition: .2s ease;
+}
+
+#options-list li:hover,
+#toggle-button:hover {
+    background-color: #000; /*change background colour for BUTTON HOVER*/
+    color: #fff; /*change text colour for BUTTON HOVER*/
+}
